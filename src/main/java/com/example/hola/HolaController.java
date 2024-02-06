@@ -6,6 +6,19 @@ public class HolaController {
 
     @GetMapping("")
     public String index() {
-        return "index";
+        try {
+            return "index";
+        } catch (Exception e) {
+            return "error";
+        }
+    }
+
+    @GetMapping("/")
+    public String index2() {
+        try {
+            return "index";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 }
