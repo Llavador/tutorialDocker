@@ -6,6 +6,6 @@ public class HolaController {
 
     @GetMapping("")
     public String index() {
-        return "Index";
+        return "index";
     }
 }
